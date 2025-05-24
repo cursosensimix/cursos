@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>A.ZAW</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="css/foodhut.css">
+
+    <style>
+        /* Aumentamos el espacio en la parte superior del encabezado */
+        .header {
+            padding-top: 150px; /* Aumentar según sea necesario */
+            height: 150vh; /* Definir altura para visualizar mejor */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative; /* Para asegurar que overlay funcione bien */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+            text-align: center; /* Centramos el texto */
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/imgs/logo.svg" class="brand-img" alt="">
+            <span class="brand-txt">A.ZAW</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">A.ZAW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galeria.html">Galeria</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonios.html">Blog Creativo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Creaciones
+                    </a>
+                    <!-- Menú desplegable -->
+                    	    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="pinturas.html">PINTURAS</a>
+                        <a class="dropdown-item" href="otros.html">OTROS</a>
+                        <a class="dropdown-item" href="murales.html">MURALES</a>
+                        <a class="dropdown-item" href="ropayaccesorios.html">ROPA Y ACCESORIOS</a>
+                        <a class="dropdown-item" href="cursoylibros.html">CURSOS y LIBROS </a>
+
+                    </div>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactar.html">Contacta</a>
+                </li>
+            </ul>
+            <a href="creaciones.html" class="btn btn-primary ml-xl-4">Añádelos a tu Colección</a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+      
+
+    <!-- book a table Section  -->
+    <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
+        <div class="">
+            <h2 class="section-title mb-5">AGENDA CON TEMBA ESCOGE TU DIA Y HORA</h2>
+            <div class="row mb-5">
+        
+            </div>
+            <a href="agendar.html" class="btn btn-lg btn-primary" id="rounded-btn">ENCUENTRA TU HORA </a>
+        </div>
+    </div>
+
+  
+
+    <!-- CONTACT Section  -->
+    <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
+            </div>
+            <div class="col-md-6 px-5 has-height-lg middle-items">
+                <h3>ENCUENTRANOS</h3>
+                <p>Sientete libre de contactar con Temba para cualquier consulta tienes tres opciones ir al centro (pide cita para no tener que esperar" dinos que es la primera vez que llamas" , por telefono (si no te lo podemos coger te devolveremos la llamada y por correo dejanso toda la información y nos pondremos en contacto contigo. A que esperas!</p>
+                <div class="text-muted">
+                    <p><span class="ti-location-pin pr-3"></span> cALLE DEL ESTUDIO,sANTANDER</p>
+                    <p><span class="ti-support pr-3"></span>  +34606</p>
+                    <p><span class="ti-email pr-3"></span>temba@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page footer  -->
+    <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>NUESTRO CORREO</h3>
+                <P class="text-muted">temba@gmail.com.com</P>
+            </div>
+            <div class="col-sm-4">
+                <h3>LLAMANOS</h3>
+                <P class="text-muted">+34606</P>
+            </div>
+            <div class="col-sm-4">
+                <h3>BUSCANOS </h3>
+                <P class="text-muted">CALLE DEL CENTRO ,SANTANDER</P>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> HECHO <i class="ti-heart text-danger"></i> POR <a href="http://">ANAZAW</a></p>
+    </div>
+    <!-- end of page footer -->
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+    
+    <!-- google maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
+
+	<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
